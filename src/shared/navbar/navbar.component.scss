@@ -105,7 +105,7 @@
                     border: 1px solid #E5E7EB;
                     border-radius: 0.4rem;
                     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-                    background: transparent url(/assets/svgs/Search.svg);
+                    background: white url(/assets/svgs/Search.svg);
                     background-position: 1rem;
                     background-size: 1rem;
                     background-repeat: no-repeat;
@@ -154,7 +154,7 @@
         padding-left: 3rem;
 
         .left {
-            gap: 5rem;
+            gap: 2rem;
         }
 
         .left .link-group .link {

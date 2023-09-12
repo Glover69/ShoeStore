@@ -30,20 +30,23 @@
     .right img {
         width: 3rem;
         height: 3rem;
-        transform: rotate(-46.074deg);
+        transform: rotate(-65.074deg);
         flex-shrink: 0;
     }
 }
 
 @media (min-width: 1024px) {
-
-
     .left .category-txt {
         font-size: 0.9rem;
     }
 
     .left .shoe-txt {
         font-size: 1.2rem;
+    }
+
+    .right img {
+        width: 4rem;
+        height: 4rem;
     }
 }
 
