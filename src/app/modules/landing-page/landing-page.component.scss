@@ -8,7 +8,13 @@
 @media (min-width: 340px) {
 
     .hero-section {
-        height: 33rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-hero-section{
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -146,11 +152,18 @@
     }
 
     .hero-section {
+        position: relative;
+        height: 40rem;
+    }
+
+
+    .inner-hero-section{
+        display: flex;
         flex-direction: row-reverse;
         position: absolute;
         width: 100%;
         top: 0;
-        height: 38rem;
+        height: 100%;
     }
 
     .hero-section .top {
@@ -184,6 +197,38 @@
 
     .header-section .sub-header {
         font-size: 1.25rem;
+    }
+
+
+
+     // 3 Sections for shoe brands 
+
+     .three-brands-section {
+        padding: 3rem;
+        flex-direction: row;
+        gap: 2rem;
+        height: 40rem;
+    }
+
+    .three-brands-section .adidas-section {
+        height: 100%;
+        width: 60%;
+    }
+
+    .three-brands-section .right-side {
+        gap: 2rem;
+        width: 40%;
+        height: 100%;
+    }
+
+    .three-brands-section .right-side .nike-section {
+        height: 50%;
+        width: 100%;
+    }
+
+    .three-brands-section .right-side .puma-section {
+        height: 50%;
+        width: 100%;
     }
 }
 
@@ -221,6 +266,12 @@
         font-size: 3.8rem;
         line-height: 3.8rem;
     }
+
+     // 3 Sections for shoe brands 
+
+     .three-brands-section {
+        height: 45rem;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -249,11 +300,17 @@
     .header-section .sub-header {
         font-size: 1.5rem;
     }
+
+
+     // 3 Sections for shoe brands 
+
+     .three-brands-section {
+        height: 50rem;
+    }
 }
 
 @media (min-width: 1650px) {
     .hero-section {
-        flex-direction: row-reverse;
         height: 60rem;
     }
 
@@ -268,5 +325,11 @@
 
     .header-section .sub-header {
         font-size: 2rem;
+    }
+
+     // 3 Sections for shoe brands 
+
+     .three-brands-section {
+        height: 55rem;
     }
 }
