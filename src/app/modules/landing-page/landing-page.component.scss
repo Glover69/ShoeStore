@@ -4,3 +4,69 @@
     position: relative;
     overflow-x: hidden;
 }
+
+@media (min-width: 340px) {
+
+    .hero-section {
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section .top {
+        height: 60%;
+        position: relative;
+    }
+
+    .hero-section .top app-shoe-hint {
+        position: absolute;
+        top: 75%;
+        left: 15%;
+    }
+
+    .hero-section .bottom {
+        padding: 1rem;
+        padding-top: 2rem;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        background: #F5F5F5;
+    }
+
+    .hero-section .bottom .header-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .header-section .arrivals-txt {
+        font-family: 'SF-Regular';
+        color: #3E3E59;
+        font-size: 1rem;
+    }
+
+    .header-section .main-header {
+        font-family: 'SF-Bold';
+        color: #121212;
+        font-size: 2.125rem;
+        line-height: 2.375rem;
+        letter-spacing: -0.0375rem;
+    }
+
+    .header-section .sub-header {
+        font-family: 'SF-Regular';
+        color: #3E3E59;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1650px) {}

@@ -1,0 +1,44 @@
+@media (min-width: 340px) {
+
+    .entire-wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .entire-wrapper .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    .left .category-txt {
+        color: rgba(50, 56, 64, 0.50);
+        font-family: 'SF-Regular';
+        font-size: 0.5rem;
+        letter-spacing: -0.0115rem;
+    }
+
+    .left .shoe-txt {
+        color: #323840;
+        font-family: 'SF-Regular';
+        font-size: 0.65rem;
+        letter-spacing: -0.0115rem;
+    }
+
+    .right img {
+        width: 3rem;
+        height: 3rem;
+        transform: rotate(-46.074deg);
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1650px) {}
