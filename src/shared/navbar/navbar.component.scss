@@ -58,14 +58,17 @@
         align-items: center;
         justify-content: space-between;
         background: transparent;
-        padding-left: 3rem;
-
 
         .left {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
+
+            .logo{
+                width: 3rem;
+            }
+
         }
 
         .left .link-group {

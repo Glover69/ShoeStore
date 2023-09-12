@@ -43,7 +43,7 @@
     }
 
     .header-section .arrivals-txt {
-        font-family: 'SF-Regular';
+        font-family: 'SF-Medium';
         color: #3E3E59;
         font-size: 1rem;
     }
@@ -57,13 +57,51 @@
     }
 
     .header-section .sub-header {
-        font-family: 'SF-Regular';
+        font-family: 'SF-Medium';
         color: #3E3E59;
         font-size: 1rem;
     }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    
+    .hero-section {
+        flex-direction: row-reverse;
+    }
+
+    .hero-section .top {
+        height: 100%;
+        width: 50%;
+    }
+
+    .hero-section .top app-shoe-hint {
+        left: -13%;
+    }
+
+    .hero-section .bottom {
+        padding-left: 7rem;
+        gap: 1.8rem;
+        justify-content: center;
+        background: #fff;
+    }
+
+    .hero-section .bottom .header-section {
+        gap: 0.8rem;
+    }
+
+    .header-section .arrivals-txt {
+        font-size: 1rem;
+    }
+
+    .header-section .main-header {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .header-section .sub-header {
+        font-size: 1.25rem;
+    }
+}
 
 @media (min-width: 1280px) {}
 
