@@ -1,0 +1,33 @@
+<div class="tab">
+    <div class="tabUnselected" (click)="setActiveTab('tab1')" [class.active]="tabSelected === 'tab1'">
+        Best Sellers
+    </div>
+
+    <div class="tabUnselected" (click)="setActiveTab('tab2')" [class.active]="tabSelected === 'tab2'">
+        Sale
+    </div>
+
+    <div class="tabUnselected" (click)="setActiveTab('tab3')" [class.active]="tabSelected === 'tab3'">
+        New Arrivals
+    </div>
+</div>
+
+
+<div class="tab-content">
+    <ng-container *ngIf="tabSelected === 'tab1'">
+        <app-best-sellers-tab></app-best-sellers-tab>
+
+    </ng-container>
+
+    <ng-container *ngIf="tabSelected === 'tab2'">
+
+        <app-sale-tab></app-sale-tab>
+
+    </ng-container>
+
+    <ng-container *ngIf="tabSelected === 'tab3'">
+
+        <app-new-arrivals-tab></app-new-arrivals-tab>
+
+    </ng-container>
+</div>
