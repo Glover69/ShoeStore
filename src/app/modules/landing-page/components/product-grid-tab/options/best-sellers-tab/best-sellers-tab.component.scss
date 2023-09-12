@@ -1,5 +1,11 @@
 @media (min-width: 340px) {
-    .entire-product-grid {
+    .entire-product-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .inner-grid {
         display: grid;
         grid-template-columns: auto auto;
         gap: 1rem;
@@ -35,5 +41,49 @@
         color: #121212;
         font-family: 'SF-Bold';
         font-size: 1.25rem;
+    }
+
+    .load-more-btn{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-grid {
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .entire-product-grid .single-card {
+        height: 22rem;
+        gap: 1.5rem;
+        width: 15rem;
+    }
+
+    .info-section .shoe-name {
+        font-size: 1rem;
+    }
+
+    .info-section .shoe-price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .inner-grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .entire-product-grid .single-card {
+        height: 22rem;
+        gap: 1.5rem;
+    }
+
+    .info-section .shoe-name {
+        font-size: 1rem;
+    }
+
+    .info-section .shoe-price {
+        font-size: 1.5rem;
     }
 }
