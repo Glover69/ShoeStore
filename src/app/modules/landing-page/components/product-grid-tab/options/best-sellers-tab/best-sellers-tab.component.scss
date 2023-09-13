@@ -72,10 +72,11 @@
 @media (min-width: 1280px) {
     .inner-grid {
         grid-template-columns: auto auto auto auto;
+        gap: 2rem;
     }
 
     .entire-product-grid .single-card {
-        height: 22rem;
+        height: 25rem;
         gap: 1.5rem;
     }
 
@@ -85,5 +86,31 @@
 
     .info-section .shoe-price {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .info-section .shoe-name {
+        font-size: 1.2rem;
+    }
+
+    .info-section .shoe-price {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1650px){
+    .entire-product-grid .single-card {
+        height: 30rem;
+        gap: 1.5rem;
+        width: 20rem;
+    }
+
+    .info-section .shoe-name {
+        font-size: 1.5rem;
+    }
+
+    .info-section .shoe-price {
+        font-size: 2rem;
     }
 }

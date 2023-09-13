@@ -13,7 +13,7 @@
         flex-direction: column;
     }
 
-    .inner-hero-section{
+    .inner-hero-section {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -90,7 +90,7 @@
             text-decoration: none;
             border-bottom: 1px solid #121212;
 
-            span{
+            span {
                 color: #121212;
                 font-family: 'SF-Medium';
                 font-size: 1rem;
@@ -142,7 +142,7 @@
 
 
         // Targeting the puma logo to reduce it
-        img{
+        img {
             width: 4rem;
         }
     }
@@ -150,8 +150,26 @@
 
     // Product grid section
 
-    .product-grid-section{
+    .product-grid-section {
         padding: 0 1rem;
+    }
+
+    // Partners section 
+
+    .partners-section {
+        padding: 1.5rem;
+    }
+
+    .inner-partners {
+        padding: 2rem 0rem;
+        border-top: 1px solid #CBCBCB;
+        border-bottom: 1px solid #CBCBCB;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem 1rem;
+        justify-items: center;
     }
 
 }
@@ -169,7 +187,7 @@
     }
 
 
-    .inner-hero-section{
+    .inner-hero-section {
         display: flex;
         flex-direction: row-reverse;
         position: absolute;
@@ -213,10 +231,10 @@
 
 
 
-     // 3 Sections for shoe brands 
+    // 3 Sections for shoe brands 
 
-     .three-brands-section {
-        padding: 3rem;
+    .three-brands-section {
+        padding: 3rem 6rem;
         flex-direction: row;
         gap: 2rem;
         height: 40rem;
@@ -246,8 +264,25 @@
 
     // Product grid section
 
-    .product-grid-section{
+    .product-grid-section {
         padding: 0 3rem;
+    }
+
+    // Partners section 
+
+    .partners-section {
+        padding: 2rem 6rem;
+    }
+
+    .inner-partners {
+        padding: 2rem 0rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img{
+            width: 8rem;
+        }
     }
 }
 
@@ -286,10 +321,24 @@
         line-height: 3.8rem;
     }
 
-     // 3 Sections for shoe brands 
+    // 3 Sections for shoe brands 
 
-     .three-brands-section {
+    .three-brands-section {
         height: 45rem;
+    }
+
+      // Partners section 
+
+      .partners-section {
+        padding: 2rem 10rem;
+    }
+
+    .inner-partners {
+        gap: 1.5rem;
+
+        img{
+            width: 9rem;
+        }
     }
 }
 
@@ -321,10 +370,21 @@
     }
 
 
-     // 3 Sections for shoe brands 
+    // 3 Sections for shoe brands 
 
-     .three-brands-section {
+    .three-brands-section {
         height: 50rem;
+    }
+
+     // Partners section 
+
+     .partners-section {
+        padding: 4rem 12rem;
+    }
+
+    .inner-partners {
+        padding: 3rem 0;
+        gap: 2rem;
     }
 }
 
@@ -346,9 +406,25 @@
         font-size: 2rem;
     }
 
-     // 3 Sections for shoe brands 
+    // 3 Sections for shoe brands 
 
-     .three-brands-section {
+    .three-brands-section {
         height: 55rem;
+    }
+
+
+     // Partners section 
+
+     .partners-section {
+        padding: 5rem 15rem;
+    }
+
+    .inner-partners {
+        padding: 4rem 0;
+        gap: 3rem;
+
+        img{
+            width: fit-content;
+        }
     }
 }
