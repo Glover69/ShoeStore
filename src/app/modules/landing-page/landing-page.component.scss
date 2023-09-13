@@ -85,18 +85,6 @@
         align-items: flex-start;
         gap: 1rem;
         padding: 1.5rem;
-
-        a {
-            text-decoration: none;
-            border-bottom: 1px solid #121212;
-
-            span {
-                color: #121212;
-                font-family: 'SF-Medium';
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-        }
     }
 
     .three-brands-section .adidas-section {
@@ -171,8 +159,124 @@
         gap: 2rem 1.5rem;
         justify-items: center;
 
-        img{
+        img {
             width: 9rem;
+        }
+    }
+
+
+    // Reviews section
+
+    .reviews-section {
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-header-container {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .review-header-container .review-title {
+        color: #121212;
+        text-align: center;
+        font-family: 'SF-Medium';
+        font-size: 1.5rem;
+    }
+
+    .review-header-container .control-btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .reviews-section .review-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .review-content .review-card {
+        background: #FFF;
+        box-shadow: 0px 8.18866px 16.37731px 0px rgba(0, 0, 0, 0.04);
+        width: 90%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .review-card .customer-info-section {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    .customer-info-section .customer-img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 999px;
+    }
+
+    .customer-info-section .customer-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+
+        .customer-name {
+            color: #121212;
+            font-family: 'SF-Medium';
+            font-size: 1.125rem;
+            letter-spacing: -0.02556rem;
+        }
+    }
+
+    .review-card .customer-review-txt {
+        color: #3E3E59;
+        font-family: 'SF-Regular';
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+
+
+    // FAQ Section 
+
+    .faq-section {
+        height: 20rem;
+        background: url('/assets/images/faq.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+
+        .faq-header {
+            color: #121212;
+            text-align: center;
+            font-family: 'SF-Medium';
+            font-size: 2rem;
+            line-height: 2.4375rem;
+            letter-spacing: -0.025rem;
+        }
+
+        .faq-subheader {
+            color: #3E3E59;
+            text-align: center;
+            font-family: 'SF-Regular';
+            font-size: 1.125rem;
+            line-height: 1.625rem;
         }
     }
 
@@ -284,7 +388,7 @@
         align-items: center;
         gap: 1rem;
 
-        img{
+        img {
             width: 8rem;
         }
     }
@@ -331,16 +435,16 @@
         height: 45rem;
     }
 
-      // Partners section 
+    // Partners section 
 
-      .partners-section {
+    .partners-section {
         padding: 2rem 10rem;
     }
 
     .inner-partners {
         gap: 1.5rem;
 
-        img{
+        img {
             width: 9rem;
         }
     }
@@ -380,9 +484,9 @@
         height: 50rem;
     }
 
-     // Partners section 
+    // Partners section 
 
-     .partners-section {
+    .partners-section {
         padding: 4rem 12rem;
     }
 
@@ -417,9 +521,9 @@
     }
 
 
-     // Partners section 
+    // Partners section 
 
-     .partners-section {
+    .partners-section {
         padding: 5rem 15rem;
     }
 
@@ -427,7 +531,7 @@
         padding: 4rem 0;
         gap: 3rem;
 
-        img{
+        img {
             width: fit-content;
         }
     }
