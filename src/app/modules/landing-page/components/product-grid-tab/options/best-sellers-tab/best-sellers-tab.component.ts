@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
-export interface CardData {
-  productImg: string,
-  productName: string,
-  productPrice: string,
-}
 
 @Component({
   selector: 'app-best-sellers-tab',
@@ -13,16 +9,14 @@ export interface CardData {
 })
 export class BestSellersTabComponent {
 
-  card : CardData[] = [
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
-    {productImg: '/assets/images/Nike/nike-vapor-women-1.jpeg', productName: 'Nike Jordan MVP', productPrice: '$56.00'},
+  constructor( private dataService : DataService){}
 
-  ]
+  cardData: any[] = [];
+
+  ngOnInit(): void {
+    this.dataService.getBestSellers().subscribe((_data) => {
+      this.cardData = _data;
+    });
+  }
 
 }

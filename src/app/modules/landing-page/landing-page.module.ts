@@ -8,6 +8,7 @@ import { ProductGridTabComponent } from './components/product-grid-tab/product-g
 import { BestSellersTabComponent } from './components/product-grid-tab/options/best-sellers-tab/best-sellers-tab.component';
 import { NewArrivalsTabComponent } from './components/product-grid-tab/options/new-arrivals-tab/new-arrivals-tab.component';
 import { SaleTabComponent } from './components/product-grid-tab/options/sale-tab/sale-tab.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SaleTabComponent } from './components/product-grid-tab/options/sale-tab
     BestSellersTabComponent,
     SaleTabComponent,
     NewArrivalsTabComponent,
+    NewsletterComponent
   ],
   imports: [
     CommonModule,

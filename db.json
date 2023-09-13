@@ -1,0 +1,14 @@
+{
+  "bestSellers": [
+    { "id": 1, "productImg": "/assets/images/Nike/nike-vapor-women-1.jpeg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 2, "productImg": "/assets/images/Adidas/adidas-k3.0-men-4.jpg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 3, "productImg": "/assets/images/Puma/puma-daytona-unisex-1.jpeg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 4, "productImg": "/assets/images/Nike/nike-a270-women-1.jpeg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 5, "productImg": "/assets/images/Nike/nike-metcom-men-1.jpeg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 6, "productImg": "/assets/images/Jumpman/jumpman-ajko-men-1.jpeg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 7, "productImg": "/assets/images/Vans/vans-slip-on-checkered-unisex-1.webp", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 8, "productImg": "/assets/images/Adidas/adidas-UB-women-3.jpg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 9, "productImg": "/assets/images/Jumpman/jumpman-AJM-men-1.jpg", "productName": "Nike Jordan MVP", "productPrice": 56.00 },
+    { "id": 10, "productImg": "/assets/images/Vans/vans-slip-on-cozy-unisex-1.webp", "productName": "Nike Jordan MVP", "productPrice": 56.00 }
+  ]
+}
