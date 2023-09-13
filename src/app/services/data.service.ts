@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:3000/bestSellers'; 
+  private apiUrl = 'https://json-server-two-chi.vercel.app/bestSellers'; 
 
   constructor(private http: HttpClient) {}
 
