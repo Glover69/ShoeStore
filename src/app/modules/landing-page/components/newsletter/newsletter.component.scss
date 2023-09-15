@@ -8,6 +8,13 @@
         background: #FAFAFB;
     }
 
+    .inner-newsletter {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     .image-section {
         height: 50%;
     }
@@ -88,4 +95,137 @@
             }
         }
     }
+}
+
+@media (min-width: 1024px) {
+    .entire-newsletter-wrapper {
+        height: 18rem;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 5rem;
+        padding: 3rem;
+    }
+
+    .inner-newsletter {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        gap: 3rem;
+        border-radius: 0.4rem;
+        border: 1px solid #E5E7EB;
+        background: #FFF;
+    }
+
+    .inner-newsletter .image-section {
+        width: 60%;
+        height: 100%;
+        border-left: 1px solid #E5E7EB;
+    }
+
+    .newsletter-content {
+        width: 50%;
+        padding: 2rem;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+    .newsletter-content .content-header {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+    .entire-newsletter-wrapper {
+        height: 25rem;
+    }
+
+    .newsletter-content {
+        width: 50%;
+        padding: 2rem;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+    .newsletter-content .content-header {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+
+    .newsletter-content {
+        gap: 2rem;
+    }
+
+    .newsletter-content .content-header {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .newsletter-content .content-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .input-label {
+                color: #3E3E59;
+                font-family: 'SF-Medium';
+                font-size: 1rem;
+            }
+
+            form {
+                input[type="email"] {
+                    background-size: 1.2rem;
+                    padding: 1rem;
+                    padding-left: 3rem;
+                }
+
+                input[type="email"]::placeholder {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+
+        .terms-wrapper {
+            gap: 0.5rem;
+
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1650px) {
+    .entire-newsletter-wrapper {
+        height: 30rem;
+    }
+
+    .newsletter-content {
+        width: 50%;
+        padding: 2rem;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+    .newsletter-content .content-header {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+
 }

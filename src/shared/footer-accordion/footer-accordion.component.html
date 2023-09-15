@@ -1,0 +1,8 @@
+<div class="tile-header" (click)="toggleAccordion()">
+    <span class="header-txt">{{title}}</span>
+    <img [class.expanded]="expanded" src="/assets/svgs/icn-chevron-down.svg" alt="">
+</div>
+
+<div class="tile-content" [class.expanded]="expanded" *ngIf="expanded">
+    <span>{{content}}</span>
+</div>

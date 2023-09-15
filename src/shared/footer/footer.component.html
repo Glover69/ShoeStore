@@ -15,11 +15,31 @@
         </div>
 
         <div class="footer-dropdown-wrapper">
+            <div class="single-tile" *ngFor="let content of content">
+                <app-footer-accordion [title]="content.title" [content]="content.content"
+                  [isExpanded]="content.isExpanded"></app-footer-accordion>
+                  
+              </div>
 
         </div>
     </div>
 
     <div class="mobile-lower-section">
+
+        <div class="selectors-wrapper">
+            <div class="language-selector">
+                <img src="/assets/svgs/usa-flag.svg" alt="">
+
+                <div class="inner-lang-selector">
+                    <span>English</span>
+                    <img src="/assets/svgs/icn-chevron-down.svg" alt="">
+                </div>
+            </div>
+            <div class="currency-selector">
+                <span>USD</span>
+                <img src="/assets/svgs/icn-chevron-down.svg" alt="">
+            </div>
+        </div>
 
     </div>
 </section>

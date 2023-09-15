@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { FooterAccordionComponent } from './footer-accordion/footer-accordion.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    FooterAccordionComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     RouterModule,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    FooterAccordionComponent
 
   ]
 })
