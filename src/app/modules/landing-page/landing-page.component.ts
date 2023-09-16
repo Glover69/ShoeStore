@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { trigger, transition, style, animate } from "@angular/animations";
+import { trigger, transition, style, animate, useAnimation } from "@angular/animations";
+import {
+  fadeIn,
+  fadeOut,
+} from "../../../animations/carousel.animations";
 
 
 export interface ReviewSlides {
@@ -12,16 +16,23 @@ export interface ReviewSlides {
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
-  
+
+  // animations: [
+  //   trigger('carouselAnimation', [
+  //     transition('void => *', [
+  //       style({ opacity: 0.5 }),
+  //       animate('500ms', style({ opacity: 1 }))
+  //     ]),
+  //     transition('* => void', [
+  //       animate('500ms', style({ opacity: 0.5 }))
+  //     ])
+  //   ])
+  // ]
+
   animations: [
-    trigger('carouselAnimation', [
-      transition('void => *', [
-        style({ opacity: 0 }),
-        animate('500ms', style({ opacity: 1 }))
-      ]),
-      transition('* => void', [
-        animate('500ms', style({ opacity: 0 }))
-      ])
+    trigger("carouselAnimation", [
+      transition("void => *", [useAnimation(fadeIn, {params: { time: '1300ms' }} )]),
+      transition("* => void", [useAnimation(fadeOut, {params: { time: '1300ms' }})]),
     ])
   ]
 
@@ -30,14 +41,14 @@ export class LandingPageComponent {
   title = 'ShoeStore';
 
   reviews: ReviewSlides[] = [
-    {customerImg: "/assets/images/profile-2.jpeg", customerName: "John Appleseed", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-3.jpg", customerName: "Daniel Glover", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-4.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-5.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-6.jpeg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-7.jpeg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-3.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
-    {customerImg: "/assets/images/profile-4.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️."},
+    { customerImg: "/assets/images/profile-2.jpeg", customerName: "John Appleseed", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-3.jpg", customerName: "Daniel Glover", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-4.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-5.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-6.jpeg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-7.jpeg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-3.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
+    { customerImg: "/assets/images/profile-4.jpg", customerName: "Benjamin Coyle-Larner", customerReviewTxt: "Fantastic clothes. I wasn't sure when I ordered them but I have to say it's without any doubts the best purchase of this year. So comfy and stylish ❤️." },
 
 
   ]
@@ -52,7 +63,7 @@ export class LandingPageComponent {
 
   currentSlide = 0;
 
-  constructor() {}
+  constructor() { }
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
