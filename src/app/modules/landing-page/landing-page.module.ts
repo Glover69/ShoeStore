@@ -9,7 +9,8 @@ import { BestSellersTabComponent } from './components/product-grid-tab/options/b
 import { NewArrivalsTabComponent } from './components/product-grid-tab/options/new-arrivals-tab/new-arrivals-tab.component';
 import { SaleTabComponent } from './components/product-grid-tab/options/sale-tab/sale-tab.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
-import { FooterAccordionComponent } from '../../../shared/footer-accordion/footer-accordion.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterAccordionComponent } from '../../../shared/footer-accordion/foote
   imports: [
     CommonModule,
     LandingPageRoutingModule,
-    SharedModule
+    SharedModule,
+    
   ]
 })
 export class LandingPageModule { }

@@ -94,39 +94,40 @@
             <span class="review-title">Reviews</span>
 
             <div class="control-btn-wrapper">
-                <div id="prev-btn">
+                <div id="prev-btn" (click)="onPreviousClick()">
                     <img src="/assets/svgs/arrow-rightblack.svg" alt="">
                 </div>
 
-                <div id="next-btn">
+                <div id="next-btn" (click)="onNextClick()">
                     <img src="/assets/svgs/arrow-rightblack.svg" alt="">
                 </div>
             </div>
         </div>
 
         <div class="review-content">
-            <div class="review-card">
+            <ng-container *ngFor="let card of reviews; let i = index">
+            <div class="review-card" @carouselAnimation *ngIf="i === currentSlide">
 
                 <div class="customer-info-section">
                     <div class="customer-img"
-                        style="background: url('/assets/images/profile-2.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        style="background: url('{{card.customerImg}}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                     </div>
 
                     <div class="customer-details">
-                        <span class="customer-name">John Appleseed</span>
+                        <span class="customer-name">{{card.customerName}}</span>
                         <img src="/assets/svgs/rating-group.svg" alt="">
                     </div>
                 </div>
 
-                <span class="customer-review-txt">“Fantastic clothes. I wasn't sure when I ordered them but I have to
-                    say it's without any doubts the best purchase of this year. So comfy and stylish ❤️.”</span>
+                <span class="customer-review-txt">“{{card.customerReviewTxt}}”</span>
             </div>
+            </ng-container>
 
-            <div class="navigation-wrapper">
-
-            </div>
         </div>
 
+        <div class="navigation-wrapper">
+
+        </div>
 
     </div>
 
