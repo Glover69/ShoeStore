@@ -42,6 +42,13 @@ export class LandingPageComponent {
 
   ]
 
+  // currentIndex: number = 0;
+
+  goToCard(index: number) {
+    // Update the currentIndex when an indicator is clicked
+    this.currentSlide = index;
+  }
+
 
   currentSlide = 0;
 

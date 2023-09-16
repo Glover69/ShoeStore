@@ -106,27 +106,30 @@
 
         <div class="review-content">
             <ng-container *ngFor="let card of reviews; let i = index">
-            <div class="review-card" @carouselAnimation *ngIf="i === currentSlide">
+                <div class="review-card" @carouselAnimation *ngIf="i === currentSlide">
 
-                <div class="customer-info-section">
-                    <div class="customer-img"
-                        style="background: url('{{card.customerImg}}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <div class="customer-info-section">
+                        <div class="customer-img"
+                            style="background: url('{{card.customerImg}}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        </div>
+
+                        <div class="customer-details">
+                            <span class="customer-name">{{card.customerName}}</span>
+                            <img src="/assets/svgs/rating-group.svg" alt="">
+                        </div>
                     </div>
 
-                    <div class="customer-details">
-                        <span class="customer-name">{{card.customerName}}</span>
-                        <img src="/assets/svgs/rating-group.svg" alt="">
-                    </div>
+                    <span class="customer-review-txt">“{{card.customerReviewTxt}}”</span>
                 </div>
 
-                <span class="customer-review-txt">“{{card.customerReviewTxt}}”</span>
-            </div>
             </ng-container>
 
-        </div>
-
-        <div class="navigation-wrapper">
-
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li *ngFor="let card of reviews; let i = index" [class.active]="currentSlide === i"
+                    (click)="goToCard(i)">
+                </li>
+            </ul>
         </div>
 
     </div>
@@ -152,5 +155,5 @@
 
     <!-- Footer section -->
     <app-footer></app-footer>
-    
+
 </section>
