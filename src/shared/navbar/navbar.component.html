@@ -26,7 +26,7 @@
     <div class="right">
 
         <form action="submit">
-        <input  type="search" name="" id="" placeholder="Search here...">
+            <input type="search" name="" id="" placeholder="Search here...">
         </form>
 
         <div>
@@ -47,9 +47,9 @@
 <section class="entire-mobile-nav">
 
     <div class="left">
-        <img src="/assets/svgs/menu.svg" alt="">
+        <img src="/assets/svgs/menu.svg" alt="" (click)="toggleBar()">
     </div>
-   
+
 
     <div class="middle">
         <img src="/assets/svgs/nike-logo.svg" alt="">
@@ -62,7 +62,41 @@
         <div class="profile" style="background-image: url('/assets/images/profile-1.jpg'); background-position: center;
         background-size: cover;
         background-repeat: no-repeat;">
-            
+
+        </div>
+    </div>
+
+
+    <div class="navbar-menu-expand" [hidden]="!expanded">
+        <div class="overlay" (click)="closeBar()">
+
+        </div>
+
+        <div class="main-menu">
+
+            <div class="top">
+                <div class="menu-header">
+                    <img src="/assets/svgs/nike-logo.svg" alt="">
+                    <img src="/assets/svgs/close.svg" alt="" (click)="closeBar()">
+                </div>
+
+                <form action="submit">
+                    <input type="search" name="" id="" placeholder="Search here...">
+                </form>
+
+                <div class="nav-dropdown-wrapper">
+                    <div class="single-tile" *ngFor="let content of content">
+                        <app-footer-accordion [title]="content.title" [content]="content.content"
+                          [isExpanded]="content.isExpanded"></app-footer-accordion>
+                          
+                      </div>
+        
+                </div>
+            </div>
+
+            <div class="bottom">
+
+            </div>
         </div>
     </div>
 
