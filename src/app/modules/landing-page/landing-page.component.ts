@@ -31,8 +31,8 @@ export interface ReviewSlides {
 
   animations: [
     trigger("carouselAnimation", [
-      transition("void => *", [useAnimation(fadeIn, {params: { time: '1300ms' }} )]),
-      transition("* => void", [useAnimation(fadeOut, {params: { time: '1300ms' }})]),
+      transition("void => *", [useAnimation(fadeIn, {params: { time: '1000ms' }} )]),
+      transition("* => void", [useAnimation(fadeOut, {params: { time: '1000ms' }})]),
     ])
   ]
 
