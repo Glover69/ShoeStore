@@ -41,6 +41,8 @@
         width: 100vw;
         height: 100vh;
         z-index: 1000;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
 
         .overlay {
             width: 100%;
@@ -61,7 +63,6 @@
             padding: 1.5rem;
             background: white;
             display: flex;
-            transition: 0.5s;
             flex-direction: column;
             gap: 10rem;
         }

@@ -17,18 +17,6 @@ export interface ReviewSlides {
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 
-  // animations: [
-  //   trigger('carouselAnimation', [
-  //     transition('void => *', [
-  //       style({ opacity: 0.5 }),
-  //       animate('500ms', style({ opacity: 1 }))
-  //     ]),
-  //     transition('* => void', [
-  //       animate('500ms', style({ opacity: 0.5 }))
-  //     ])
-  //   ])
-  // ]
-
   animations: [
     trigger("carouselAnimation", [
       transition("void => *", [useAnimation(fadeIn, {params: { time: '1000ms' }} )]),

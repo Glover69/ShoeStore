@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BestSellers } from 'src/app/models/shoes.models';
 import { DataService } from 'src/app/services/data.service';
 
 
@@ -11,7 +12,7 @@ export class BestSellersTabComponent {
 
   constructor( private dataService : DataService){}
 
-  cardData: any[] = [];
+  cardData: BestSellers[] = [];
 
   ngOnInit(): void {
     this.dataService.getBestSellers().subscribe((_data) => {
