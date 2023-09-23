@@ -1,159 +1,154 @@
-<section class="main-container">
-
-    <div class="hero-section">
-        <app-navbar></app-navbar>
+<div class="hero-section">
+    <!-- <app-navbar></app-navbar> -->
 
 
-        <div class="inner-hero-section">
-            <div style="background: url('/assets/images/Adidas/adidas-UB-men-1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;"
-                class="top">
+    <div class="inner-hero-section">
+        <div style="background: url('/assets/images/Adidas/adidas-UB-men-1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;"
+            class="top">
 
-                <app-shoe-hint></app-shoe-hint>
+            <app-shoe-hint></app-shoe-hint>
 
+        </div>
+
+        <div class="bottom">
+
+            <div class="header-section">
+                <span class="arrivals-txt">New Arrivals</span>
+                <span class="main-header">Good Shoes, <br>Happy Life.</span>
+                <span class="sub-header">Life is better in well-loved shoes.</span>
             </div>
 
-            <div class="bottom">
-
-                <div class="header-section">
-                    <span class="arrivals-txt">New Arrivals</span>
-                    <span class="main-header">Good Shoes, <br>Happy Life.</span>
-                    <span class="sub-header">Life is better in well-loved shoes.</span>
-                </div>
-
-                <button id="btn-filled">See Collection
-                    <img src="/assets/svgs/arrow-right.svg" alt="" loading="lazy">
-                </button>
-            </div>
+            <button id="btn-filled">See Collection
+                <img src="/assets/svgs/arrow-right.svg" alt="" loading="lazy">
+            </button>
         </div>
     </div>
+</div>
 
-    <!-- 3 sections for shoe brands -->
-    <div class="three-brands-section">
-        <div class="adidas-section">
+<!-- 3 sections for shoe brands -->
+<div class="three-brands-section">
+    <div class="adidas-section">
+        <div class="link-wrapper">
+            <img loading="lazy" src="/assets/svgs/adidas-logo.svg" alt="">
+            <a id="btn-underline" href="#">
+                <span>Explore</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="right-side">
+
+
+        <div class="nike-section">
             <div class="link-wrapper">
-                <img loading="lazy" src="/assets/svgs/adidas-logo.svg" alt="">
+                <img loading="lazy" src="/assets/svgs/nike-logo.svg" alt="">
                 <a id="btn-underline" href="#">
                     <span>Explore</span>
                 </a>
             </div>
 
+
         </div>
 
-
-        <div class="right-side">
-
-
-            <div class="nike-section">
-                <div class="link-wrapper">
-                    <img loading="lazy" src="/assets/svgs/nike-logo.svg" alt="">
-                    <a id="btn-underline" href="#">
-                        <span>Explore</span>
-                    </a>
-                </div>
-
-
+        <div class="puma-section">
+            <div class="link-wrapper">
+                <img loading="lazy" src="/assets/images/puma-logo.png" alt="">
+                <a id="btn-underline" href="#">
+                    <span>Explore</span>
+                </a>
             </div>
 
-            <div class="puma-section">
-                <div class="link-wrapper">
-                    <img loading="lazy" src="/assets/images/puma-logo.png" alt="">
-                    <a id="btn-underline" href="#">
-                        <span>Explore</span>
-                    </a>
-                </div>
 
+        </div>
 
+    </div>
+</div>
+
+<!-- Product Grid section -->
+<div class="product-grid-section">
+    <app-product-grid-tab></app-product-grid-tab>
+</div>
+
+<!-- Partners section -->
+
+<div class="partners-section">
+    <div class="inner-partners">
+        <img loading="lazy" src="/assets/svgs/nike-logo-gray.svg" alt="">
+        <img loading="lazy" src="/assets/svgs/adidas-logo-gray.svg" alt="">
+        <img loading="lazy" src="/assets/svgs/puma-logo-gray.svg" alt="">
+        <img loading="lazy" src="/assets/svgs/skechers-logo-gray.svg" alt="">
+        <img loading="lazy" src="/assets/svgs/jumpman-logo-gray.svg" alt="">
+        <img loading="lazy" src="/assets/svgs/vans-logo-gray.svg" alt="">
+    </div>
+</div>
+
+<!-- Reviews section -->
+
+<div class="reviews-section">
+
+    <div class="review-header-container">
+        <span class="review-title">Reviews</span>
+
+        <div class="control-btn-wrapper">
+            <div id="prev-btn" (click)="onPreviousClick()">
+                <img loading="lazy" src="/assets/svgs/arrow-rightblack.svg" alt="">
             </div>
 
+            <div id="next-btn" (click)="onNextClick()">
+                <img loading="lazy" src="/assets/svgs/arrow-rightblack.svg" alt="">
+            </div>
         </div>
     </div>
 
-    <!-- Product Grid section -->
-    <div class="product-grid-section">
-        <app-product-grid-tab></app-product-grid-tab>
-    </div>
+    <div class="review-content">
+        <ng-container *ngFor="let card of reviews; let i = index">
+            <div class="review-card" @carouselAnimation *ngIf="i === currentSlide">
 
-    <!-- Partners section -->
-
-    <div class="partners-section">
-        <div class="inner-partners">
-            <img loading="lazy"  src="/assets/svgs/nike-logo-gray.svg" alt="">
-            <img loading="lazy" src="/assets/svgs/adidas-logo-gray.svg" alt="">
-            <img loading="lazy" src="/assets/svgs/puma-logo-gray.svg" alt="">
-            <img loading="lazy" src="/assets/svgs/skechers-logo-gray.svg" alt="">
-            <img loading="lazy" src="/assets/svgs/jumpman-logo-gray.svg" alt="">
-            <img loading="lazy" src="/assets/svgs/vans-logo-gray.svg" alt="">
-        </div>
-    </div>
-
-    <!-- Reviews section -->
-
-    <div class="reviews-section">
-
-        <div class="review-header-container">
-            <span class="review-title">Reviews</span>
-
-            <div class="control-btn-wrapper">
-                <div id="prev-btn" (click)="onPreviousClick()">
-                    <img loading="lazy" src="/assets/svgs/arrow-rightblack.svg" alt="">
-                </div>
-
-                <div id="next-btn" (click)="onNextClick()">
-                    <img loading="lazy" src="/assets/svgs/arrow-rightblack.svg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="review-content">
-            <ng-container *ngFor="let card of reviews; let i = index">
-                <div class="review-card" @carouselAnimation *ngIf="i === currentSlide">
-
-                    <div class="customer-info-section">
-                        <div class="customer-img"
-                            style="background: url('{{card.customerImg}}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-                        </div>
-
-                        <div class="customer-details">
-                            <span class="customer-name">{{card.customerName}}</span>
-                            <img src="/assets/svgs/rating-group.svg" alt="">
-                        </div>
+                <div class="customer-info-section">
+                    <div class="customer-img"
+                        style="background: url('{{card.customerImg}}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                     </div>
 
-                    <span class="customer-review-txt">“{{card.customerReviewTxt}}”</span>
+                    <div class="customer-details">
+                        <span class="customer-name">{{card.customerName}}</span>
+                        <img src="/assets/svgs/rating-group.svg" alt="">
+                    </div>
                 </div>
 
-            </ng-container>
+                <span class="customer-review-txt">“{{card.customerReviewTxt}}”</span>
+            </div>
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li *ngFor="let card of reviews; let i = index" [class.active]="currentSlide === i"
-                    (click)="goToCard(i)">
-                </li>
-            </ul>
-        </div>
+        </ng-container>
 
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li *ngFor="let card of reviews; let i = index" [class.active]="currentSlide === i" (click)="goToCard(i)">
+            </li>
+        </ul>
     </div>
 
-    <!-- FAQ Section -->
+</div>
 
-    <div class="faq-section">
-        <span class="faq-header">You've got Questions? <br>
-            We have Answers.</span>
+<!-- FAQ Section -->
 
-        <span class="faq-subheader">Whatever it is you've got to ask? We’ve got you covered.</span>
+<div class="faq-section">
+    <span class="faq-header">You've got Questions? <br>
+        We have Answers.</span>
 
-        <button id="btn-filled">
-            FAQ'S
+    <span class="faq-subheader">Whatever it is you've got to ask? We’ve got you covered.</span>
 
-            <img loading="lazy" src="/assets/svgs/arrow-right.svg" alt="">
-        </button>
-    </div>
+    <button id="btn-filled">
+        FAQ'S
 
-    <!-- Newsletter section -->
-    <app-newsletter></app-newsletter>
+        <img loading="lazy" src="/assets/svgs/arrow-right.svg" alt="">
+    </button>
+</div>
+
+<!-- Newsletter section -->
+<app-newsletter></app-newsletter>
 
 
-    <!-- Footer section -->
-    <app-footer></app-footer>
-
-</section>
+<!-- Footer section
+<app-footer></app-footer> -->

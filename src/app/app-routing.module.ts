@@ -9,6 +9,12 @@ const routes: Routes = [
       import('./modules/landing-page/landing-page.module').then((m) => m.LandingPageModule),
   },
 
+  {
+    path: 'shop',
+    loadChildren: () => 
+      import('./modules/shop/shop.module').then((m) => m.ShopModule),
+  },
+
 ];
 
 @NgModule({
