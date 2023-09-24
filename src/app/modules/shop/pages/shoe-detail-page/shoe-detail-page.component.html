@@ -23,15 +23,19 @@
         <div class="product-image-slider-desktop">
 
             <div class="main-image"
-                style="background: url('/assets/images/Nike/nike-a270-women-1.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                style="background: url('/assets/images/Nike/nike-a270-women-1.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            </div>
 
             <div class="sub-images-wrapper">
-                <div class="sub-images" 
-                    style="background: url('/assets/images/Nike/nike-a270-women-2.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-                <div class="sub-images" 
-                    style="background: url('/assets/images/Nike/nike-a270-women-3.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-                <div class="sub-images" 
-                    style="background: url('/assets/images/Nike/nike-a270-women-4.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                <div class="sub-images"
+                    style="background: url('/assets/images/Nike/nike-a270-women-2.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+                <div class="sub-images"
+                    style="background: url('/assets/images/Nike/nike-a270-women-3.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+                <div class="sub-images"
+                    style="background: url('/assets/images/Nike/nike-a270-women-4.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
             </div>
 
         </div>
@@ -61,13 +65,13 @@
 
                 <div class="size-wrapper">
                     <span class="size-txt">Size</span>
-    
+
                     <div class="size-btn-wrapper">
-                        <button matRipple  value="" class="size-btn">S</button>
-                        <button matRipple  value="" class="size-btn">M</button>
-                        <button matRipple  value="" class="size-btn">L</button>
-                        <button matRipple  value="" class="size-btn">XL</button>
-                        <button matRipple  value="" class="size-btn">2XL</button>
+                        <button matRipple value="" class="size-btn">S</button>
+                        <button matRipple value="" class="size-btn">M</button>
+                        <button matRipple value="" class="size-btn">L</button>
+                        <button matRipple value="" class="size-btn">XL</button>
+                        <button matRipple value="" class="size-btn">2XL</button>
 
                     </div>
 
@@ -90,8 +94,35 @@
                     </div>
                 </div>
 
-                
-                
+                <div class="add-to-cart-wrapper">
+
+                    <div class="quantity-wrapper">
+                    <span class="quantity-txt">Quantity</span>
+
+                    <div matRipple id="counter">
+
+                        <!-- Remove Button -->
+                        <button>
+                            <img src="/assets/svgs/icn-remove-outline.svg" alt="">
+                        </button>
+
+
+                        <span>1</span>
+
+                        <!-- Add Button -->
+                        <button>
+                            <img src="/assets/svgs/icn-add-outline.svg" alt="">
+                        </button>
+                    </div>
+                    </div>
+
+                    <button class="add-to-cart-btn" id="btn-filled">
+                        <img src="/assets/svgs/cart-white.svg" alt="">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+
+
             </div>
 
         </div>

@@ -135,6 +135,25 @@ body {
     // image to put in : right arrow icon
   }
 
+  #counter {
+    border-radius: 0.5rem;
+    border: 2px solid rgba(153, 153, 153, 0.2);
+    background: #FFF;
+    display: flex;
+    padding: 1rem 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    color: #0A0A0A;
+    font-family: "SF-Bold";
+    font-size: 1.5rem;
+    letter-spacing: -0.06rem;
+
+    button {
+      border: 0;
+      background: transparent;
+    }
+  }
 
 }
 
