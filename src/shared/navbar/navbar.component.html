@@ -8,12 +8,12 @@
         <div class="link-group">
             <div class="link">
                 <span>Home</span>
-                <img src="/assets/svgs/chevron-down.svg" alt="">
+                <!-- <img src="/assets/svgs/chevron-down.svg" alt=""> -->
             </div>
 
             <div class="link">
                 <span>Shop</span>
-                <img src="/assets/svgs/chevron-down.svg" alt="">
+                <!-- <img src="/assets/svgs/chevron-down.svg" alt=""> -->
             </div>
 
             <div class="link">
@@ -76,7 +76,7 @@
 
             <div class="top">
                 <div class="menu-header">
-                    <img src="/assets/svgs/nike-logo.svg" alt="">
+                    <img src="/assets/svgs/logo.svg" alt="">
                     <img src="/assets/svgs/close.svg" alt="" (click)="closeBar()">
                 </div>
 
@@ -85,16 +85,48 @@
                 </form>
 
                 <div class="nav-dropdown-wrapper">
-                    <div class="single-tile" *ngFor="let content of content">
-                        <app-footer-accordion [title]="content.title" [content]="content.content"
-                          [isExpanded]="content.isExpanded"></app-footer-accordion>
+                    <!-- <div class="single-tile" *ngFor="let content of content">
+                        <app-footer-accordion></app-footer-accordion>
                           
-                      </div>
-        
+                      </div> -->
+
+                    <div class="link-group">
+
+                        <div matRipple (click)="closeBar()" routerLink="/welcome" class="link-wrapper">
+                            <!-- <img src="/assets/svgs/icn-home.svg" alt=""> -->
+                            <span>Home</span>
+                        </div>
+
+                        <div matRipple (click)="closeBar()" routerLink="/shop" class="link-wrapper">
+                            <!-- <img src="/assets/svgs/icn-about-us.svg" alt=""> -->
+                            <span>Shop</span>
+                        </div>
+
+                        <div matRipple (click)="closeBar()" routerLink="/cart" class="link-wrapper">
+                            <!-- <img src="/assets/svgs/cart.svg" alt=""> -->
+                            <span>My Cart</span>
+
+                            <div class="cart-badge">2</div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="bottom">
+                <div class="selectors-wrapper">
+
+                    <div matRipple (click)="closeBar()" routerLink="/wishlist" class="wishlist-wrapper">
+                        <span>Wishlist</span>
+
+                        <div class="count-wrapper">
+                            <img src="/assets/svgs/icn-heart.svg" alt="">
+                            <div class="cart-badge">2</div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </div>

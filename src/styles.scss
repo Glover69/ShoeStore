@@ -84,6 +84,17 @@ body {
     gap: 0.2rem;
   }
 
+  #btn-plain{
+      color: #121212;
+      font-family: 'SF-Bold';
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 0;
+      background: transparent;
+  }
+
   #btn-underline{
       text-decoration: none;
       border-bottom: 1px solid #121212;
@@ -187,3 +198,6 @@ body {
 }
 
 @media (min-width: 1650px) {}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

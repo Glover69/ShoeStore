@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterAccordionComponent } from './footer-accordion/footer-accordion.component';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { FooterAccordionComponent } from './footer-accordion/footer-accordion.co
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [

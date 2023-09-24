@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { LandingPageRoutingModule } from './landing-page-routing.module';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '../../../shared/shared.module';
 import { LandingPageComponent } from './landing-page.component';
 import { CommonModule } from '@angular/common';
 import { ShoeHintComponent } from './components/shoe-hint/shoe-hint.component';
@@ -9,6 +9,7 @@ import { BestSellersTabComponent } from './components/product-grid-tab/options/b
 import { NewArrivalsTabComponent } from './components/product-grid-tab/options/new-arrivals-tab/new-arrivals-tab.component';
 import { SaleTabComponent } from './components/product-grid-tab/options/sale-tab/sale-tab.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { MaterialModule } from '../../material.module';
 
 
 
@@ -26,6 +27,8 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
     CommonModule,
     LandingPageRoutingModule,
     SharedModule,
+    MaterialModule
+
     
   ]
 })

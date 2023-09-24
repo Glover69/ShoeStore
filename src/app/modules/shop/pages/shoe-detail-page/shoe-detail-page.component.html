@@ -116,10 +116,28 @@
                     </div>
                     </div>
 
-                    <button class="add-to-cart-btn" id="btn-filled">
+                    <button matRipple class="add-to-cart-btn" id="btn-filled">
                         <img src="/assets/svgs/cart-white.svg" alt="">
                         <span>Add to Cart</span>
                     </button>
+
+                    <div class="cart-links-wrapper">
+
+                        <button class="wishlist-btn" id="btn-plain">
+                            <img src="/assets/svgs/icn-heart.svg" alt="">
+                            <span>Wishlist</span>
+                        </button>
+
+                        <button class="ask-questions-btn" id="btn-plain">
+                            <img src="/assets/svgs/icn-help.svg" alt="">
+                            <span>Ask questions</span>
+                        </button>
+
+                        <button class="share-btn" (click)="share()" *ngIf="isWebShareSupported" id="btn-plain">
+                            <img src="/assets/svgs/icn-share.svg" alt="">
+                            <span>Share</span>
+                        </button>
+                    </div>
                 </div>
 
 
@@ -128,5 +146,7 @@
         </div>
 
     </div>
+
+    
 
 </div>
