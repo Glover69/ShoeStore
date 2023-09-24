@@ -1,5 +1,96 @@
 <!-- Desktop footer -->
+<section class="entire-desktop-footer">
 
+    <div class="content-top">
+
+        <div class="top-left">
+            <img src="/assets/svgs/logo.svg" alt="">
+
+            <span class="header-txt">Good Shoes, <br>
+                Happy Life.</span>
+
+            <div class="socials-wrapper">
+                <div class="icon-box">
+                    <img src="/assets/svgs/facebook.svg" alt="">
+                </div>
+
+                <div class="icon-box">
+                    <img src="/assets/svgs/instagram.svg" alt="">
+                </div>
+
+                <div class="icon-box">
+                    <img src="/assets/svgs/twitter.svg" alt="">
+                </div>
+
+                <div class="icon-box">
+                    <img src="/assets/svgs/email.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="top-right">
+
+            <div class="footer-column">
+                <span class="footer-title">Shop</span>
+
+                <div class="footer-links">
+                    <a href="">My Account</a>
+                    <a href="">Login</a>
+                    <a href="">Wishlist</a>
+                    <a href="">Cart</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <span class="footer-title">Information</span>
+
+                <div class="footer-links">
+                    <a href="">Shipping Policy</a>
+                    <a href="">Returns & Refunds</a>
+                    <a href="">Cookies Policy</a>
+                    <a href="">Frequently asked</a>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <span class="footer-title">Company</span>
+
+                <div class="footer-links">
+                    <a href="">About Us</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content-bottom">
+        <span class="copyright-txt">&copy; 2023</span>
+
+
+        <div class="selectors-wrapper">
+            <div class="language-selector">
+                <img src="/assets/svgs/usa-flag.svg" alt="">
+
+                <div class="inner-lang-selector">
+                    <span>English</span>
+                    <img src="/assets/svgs/icn-chevron-down.svg" alt="">
+                </div>
+            </div>
+            <div class="currency-selector">
+                <span>USD</span>
+                <img src="/assets/svgs/icn-chevron-down.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- Mobile footer -->
@@ -17,9 +108,9 @@
         <div class="footer-dropdown-wrapper">
             <div class="single-tile" *ngFor="let content of content">
                 <app-footer-accordion [title]="content.title" [content]="content.content"
-                  [isExpanded]="content.isExpanded"></app-footer-accordion>
-                  
-              </div>
+                    [isExpanded]="content.isExpanded"></app-footer-accordion>
+
+            </div>
 
         </div>
     </div>
