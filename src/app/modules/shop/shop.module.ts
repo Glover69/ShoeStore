@@ -6,6 +6,7 @@ import { ShopComponent } from './shop.component';
 import { MaterialModule } from '../../material.module';
 import { ShoeDetailPageComponent } from './pages/shoe-detail-page/shoe-detail-page.component';
 import { ProductAccordionMobileComponent } from './components/product-accordion-mobile/product-accordion-mobile.component';
+import { ProductDetailTabComponent } from './components/product-detail-tab/product-detail-tab.component';
 
 
 
@@ -14,7 +15,8 @@ import { ProductAccordionMobileComponent } from './components/product-accordion-
   declarations: [
     ShopComponent,
     ShoeDetailPageComponent,
-    ProductAccordionMobileComponent
+    ProductAccordionMobileComponent,
+    ProductDetailTabComponent
   ],
   imports: [
     CommonModule,
