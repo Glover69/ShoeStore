@@ -199,7 +199,13 @@ body {
 
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  #counter {
+    padding: 0.6rem 0.8rem;
+    font-size: 1.125rem;
+    width: 8rem;
+  }
+}
 
 @media (min-width: 1280px) {}
 

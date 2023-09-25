@@ -1,0 +1,26 @@
+<div class="entire-product-grid">
+
+    <div class="inner-grid">
+
+        <ng-container *ngFor="let card of cardData">
+
+            <div class="single-card"
+                *ngIf="card.id === 'nmd-w1' || card.id === 'ultraboost-1.0' || card.id === 'ajko-1' || card.id === 'tatum1-old-school'">
+
+                <div loading="lazy" class="image-section"
+                    style="background: url('{{card.shoeImg}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+
+                <div class="info-section">
+                    <img src="/assets/svgs/rating-group.svg" alt="">
+                    <span class="shoe-name">{{card.shoeName}}</span>
+                    <span class="shoe-price">{{card.shoePrice | currency: 'USD'}}</span>
+                </div>
+
+            </div>
+
+        </ng-container>
+    </div>
+
+
+</div>
