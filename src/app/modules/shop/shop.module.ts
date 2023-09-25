@@ -5,6 +5,7 @@ import { ShopRoutingModule } from './shop-routing.module';
 import { ShopComponent } from './shop.component';
 import { MaterialModule } from '../../material.module';
 import { ShoeDetailPageComponent } from './pages/shoe-detail-page/shoe-detail-page.component';
+import { ProductAccordionMobileComponent } from './components/product-accordion-mobile/product-accordion-mobile.component';
 
 
 
@@ -12,7 +13,8 @@ import { ShoeDetailPageComponent } from './pages/shoe-detail-page/shoe-detail-pa
 @NgModule({
   declarations: [
     ShopComponent,
-    ShoeDetailPageComponent
+    ShoeDetailPageComponent,
+    ProductAccordionMobileComponent
   ],
   imports: [
     CommonModule,

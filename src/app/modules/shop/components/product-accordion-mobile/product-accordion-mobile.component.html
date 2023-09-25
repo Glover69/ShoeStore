@@ -1,0 +1,78 @@
+<!-- <div class="tiles-wrapper">
+
+    <div class="single-tile" (click)="setTabOneActive()" [class.active]="tabSelected === 'tab1'">
+        <div class="tile-header">
+            Description
+
+            <img [class.active]="tabSelected" src="/assets/svgs/chevron-down.svg" class="icon" alt="">
+        </div>
+
+        <ng-container *ngIf="tabSelected === 'tab1'">
+            hello
+        </ng-container>
+    </div>
+
+
+
+    <ng-container>
+        <div class="tile-header" (click)="setTabTwoActive('tab2')" [class.active]="tabSelected2 === 'tab2'">
+            Description
+
+            <img [class.active]="tabSelected2" src="/assets/svgs/chevron-down.svg" class="icon" alt="">
+        </div>
+
+        <ng-container *ngIf="tabSelected2 === 'tab2'">
+            hello
+        </ng-container>
+    </ng-container>
+
+
+    
+
+   <ng-container>
+        <div class="tile-header" (click)="setTabThreeActive('tab3')" [class.active]="tabSelected3 === 'tab3'">
+            Description
+
+            <img [class.active]="tabSelected3" src="/assets/svgs/chevron-down.svg" class="icon" alt="">
+        </div>
+
+        <ng-container *ngIf="tabSelected3 === 'tab3'">
+            hello
+        </ng-container>
+   </ng-container>
+</div>
+-->
+
+<div class="single-tile">
+    <div class="tile-header" (click)="toggleAccordionOne()">
+        <span class="header-txt">Description</span>
+        <img [class.expanded]="expanded1" src="/assets/svgs/icn-chevron-down.svg" alt="">
+    </div>
+
+    <div class="tile-content" [class.expanded]="expanded1" *ngIf="expanded1">
+
+    </div>
+</div>
+
+<div class="single-tile">
+    <div class="tile-header" (click)="toggleAccordionTwo()">
+        <span class="header-txt">Additional Information</span>
+        <img [class.expanded]="expanded2" src="/assets/svgs/icn-chevron-down.svg" alt="">
+    </div>
+
+    <div class="tile-content" [class.expanded]="expanded2" *ngIf="expanded2">
+       
+    </div>
+</div>
+
+
+<div class="single-tile">
+    <div class="tile-header" (click)="toggleAccordionThree()">
+        <span class="header-txt">Reviews & Ratings</span>
+        <img [class.expanded]="expanded3" src="/assets/svgs/icn-chevron-down.svg" alt="">
+    </div>
+
+    <div class="tile-content" [class.expanded]="expanded3" *ngIf="expanded3">
+        
+    </div>
+</div>
